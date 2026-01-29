@@ -1,42 +1,49 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.fixPopUp{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  padding:50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+ 
+  justify-content:center;
+  align-items:center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.popUpContent{
+   width: 50%;
+  padding: 50px;
+  background-color: white;
+  border-radius: 8px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-area{
+  width: 60%;
+  min-height: 160px;
+  padding: 12px 14px;
+  font-size: 16px;
+  line-height: 1.5;
+
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #24292f;
+
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+.num{
+  width: 60%;
+  padding: 10px 12px;
+  font-size: 15px;
 
-.card {
-  padding: 2em;
-}
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #24292f;
 
-.read-the-docs {
-  color: #888;
 }

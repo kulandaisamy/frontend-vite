@@ -76,21 +76,21 @@ console.log(cleanText);
         <p>Backend: {backendOk ? "Connected" : "Down"}</p>
 
         <form onSubmit={handlePaste}>
-          <textarea
+          <textarea className="text-area" rows="5"
             placeholder="Paste content"
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
 
           <input
-            type="number"
+            type="number" className="num"
             placeholder="TTL (seconds, empty = unlimited)"
             value={ttl}
             onChange={(e) => setTtl(e.target.value)}
           />
 
           <input
-            type="number"
+            type="number" className="num"
             placeholder="Max views (empty = unlimited)"
             value={views}
             onChange={(e) => setViews(e.target.value)}
