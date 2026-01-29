@@ -47,3 +47,13 @@
   color: #24292f;
 
 }
+
+ul {
+  list-style: none;     /* removes the dot */
+  padding: 0;           /* removes left spacing */
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;  /* spacing between items */
+}
