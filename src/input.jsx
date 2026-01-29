@@ -18,6 +18,13 @@ function InputContainer() {
   };
   useEffect(() => {
     checkHealthConnection();
+    const loadPastes = async () => {
+      const res = await fetch(`${baseUrl}/api/pastes`);
+      if (!res.ok) return;
+      const data = await res.json();
+      setPasteUrl(data);
+    };
+    loadPastes();
   }, []);
 
   const handlePaste = async (e) => {
