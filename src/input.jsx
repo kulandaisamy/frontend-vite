@@ -9,7 +9,7 @@ function InputContainer() {
   const [pasteUrl,setPasteUrl]=useState([]);
   const [showPopUp,setPopUp]=useState(false);
   const [value,setValue]=useState("");
-  const baseUrl="https://backend-1-sa89.onrender.com";
+  const baseUrl="https://backend-2-6d4a.onrender.com";
   
   const checkHealthConnection = async () => {
     const response = await fetch(`${baseUrl}/api/healthz`);
