@@ -37,6 +37,10 @@ function InputContainer() {
 
 
     setPasteUrl([...pasteUrl,{url:data.url,id:data.id}])
+
+    setContent("");
+  setTtl("");
+  setViews("");
   };
 
   const handleView= async(id)=>{
@@ -46,6 +50,11 @@ function InputContainer() {
             "Content-Type":"application/json"
         }
     })
+    if (!response.ok) {
+    setPopUp(true);
+    setValue("Page not found");
+    return;
+    }
     const html=await response.text()
     const parser = new DOMParser();
 const doc = parser.parseFromString(html, "text/html");
@@ -63,6 +72,11 @@ console.log(cleanText);
             "Content-Type":"application/json"
         }
     })
+    if (!response.ok) {
+    setPopUp(true);
+    setValue("Page not found");
+    return;
+    }
     const data=await response.json()
     setPopUp(true)
     setValue(data.content)
