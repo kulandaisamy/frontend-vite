@@ -84,7 +84,7 @@ console.log(cleanText);
 
 
   return (
-    <div>
+    <div className="container">
       <div>
         <h2>Create Paste</h2>
         <p>Backend: {backendOk ? "Connected" : "Down"}</p>
