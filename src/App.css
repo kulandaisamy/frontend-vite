@@ -19,6 +19,11 @@
   border-radius: 8px;
 }
 
+.container{
+  padding:20px;
+  margin:20px;
+}
+
 .text-area{
   width: 60%;
   min-height: 160px;
